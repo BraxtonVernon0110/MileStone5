@@ -1,0 +1,141 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) repeat(6, minmax(0, 175px)) minmax(20px, 1fr);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  grid-column: 1 / -1;
+}
+
+
+.hero {
+  position: relative;
+  height: 500px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 50px 0;
+}
+
+/* FIRST CONTENT SECTION */
+.inner-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.left-content, .right-content {
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.left-content h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.left-content p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.right-content {
+  text-align: center;
+}
+
+.right-content img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;   /* no bottom space */
+  padding: 40px 20px;
+  background-color: #4A2A18;
+}
+
+.left, .middle, .right {
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.left h2, .middle h2, .right h2 {
+  margin-top: 0;
+  color: #A16227;
+}
+
+.left img, .middle img, .right img {
+  width: 100%;
+  max-width: 220px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 15px;
+}
+
+.left p, .middle p, .right p {
+  line-height: 1.5;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 45px 20px;
+  margin-top: 0;   /* removes gap */
+}
+
+.h1 {
+  text-align: center;
+  color: gray;
+  margin: 0;
+}
