@@ -127,6 +127,9 @@ main {
   display: block;
   margin: 15px auto;
 }
+.left img:hover, .middle img:hover, .right img:hover{
+  transform: scale(1.05);
+}
 
 .left p, .middle p, .right p {
   line-height: 1.5;
@@ -155,12 +158,12 @@ footer .h6{
 footer .foot_info{
   color: gray;
   text-decoration: underline;
-  text-align: left;
+  padding: 0, 40px;
   margin: 0;
 }
 
 footer .foot_info:hover{
-  color: black;
+  color: white;
 }
 
 
