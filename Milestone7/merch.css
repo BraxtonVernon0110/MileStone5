@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    border: 1px solid #222;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+    border-bottom: 1px solid #222;
+}
+
+.arrow img {
+    width: 55px;
+}
+.arrow img:hover {
+    transform: scale(1.05);
+}
+
+.welcome h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cart img {
+    width: 45px;
+}
+
+
+.shop-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 700px;
+}
+
+
+.left {
+    border-right: 1px solid black;
+    padding: 40px 20px;
+    background-color: #c7a94763
+}
+
+.left h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.left nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.left nav a:hover{
+    color: rgb(189, 139, 73);
+}
+
+
+.right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 30px;
+    align-content: start;
+}
+
+.right img {
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1 / 1.2;
+    object-fit: cover;
+    object-position: -1px center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    justify-self: center;
+    justify-self: left;
+}
+
+.right img:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .h1 {
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+}
+
+footer .h6 {
+    padding: 0px 60px;
+    font-weight: 600;
+    margin: 8px 0 2px 0;
+    color: gray;
+}
+
+footer .foot_info {
+    padding: 0 60px;
+    margin: 0 0 6px 0;
+    color: gray;
+    text-decoration: underline;
+}
+
+footer .foot_info:hover{
+    color: white;
+}
